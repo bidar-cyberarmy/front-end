@@ -8,13 +8,13 @@ const Router = (props) => {
 
 
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/registration' element={<Registration />} />
-                <Route path='/member' element={<Member />} />
-            </Routes>
-        </BrowserRouter>
+
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/registration' element={<Registration />} />
+            <Route path='/member' element={<Member />} />
+        </Routes>
+
     );
 }
 
