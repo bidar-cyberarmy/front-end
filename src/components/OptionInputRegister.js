@@ -1,20 +1,25 @@
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 import React from 'react';
 
 const OptionInputRegister = (props) => {
     return (
-        <div className="mb-3">
-            <label className='text-sm block text-gray-700 mb-2' htmlFor="full_name">{props.label}</label>
-            <select name="" id="" className='outline-2 
-p-2 rounded-lg w-full outline outline-gray-300 focus:outline-gray-400' defaultValue={'DEFAULT'}>
-                <option disabled selected value='DEFAULT'>{props.placeholder}</option>
-
-                {props.value.map(function (val, i) {
-                    return (
-                        <option key={i} value="">{val.text}</option>
-                    );
-                })}
-            </select>
-        </div>
+        <>
+            <FormControl fullWidth style={{ 'marginBottom': '12px' }}>
+                <InputLabel id={props.id}>{props.label}</InputLabel>
+                <Select
+                    labelId={props.id}
+                    label={props.label} variant='filled'
+                >
+                    {
+                        props.value.map(function (val, i) {
+                            return (
+                                <MenuItem key={i}>{val.text}</MenuItem>
+                            )
+                        })
+                    }
+                </Select>
+            </FormControl>
+        </>
     );
 }
 

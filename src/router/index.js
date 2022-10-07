@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes, useNavigate } from 'react-router-dom';
 
 import Home from '../pages/Home';
 import Member from '../pages/Member';
@@ -8,7 +8,6 @@ const Router = (props) => {
 
 
     return (
-
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/registration' element={<Registration />} />

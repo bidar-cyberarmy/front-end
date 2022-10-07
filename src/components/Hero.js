@@ -19,7 +19,7 @@ const Hero = () => {
                         </p>
                     </div>
                     <div className="link-gabung">
-                        <NavLink className="btn-gabung" to='/registration' >
+                        <NavLink className="btn-gabung" to={'/registration'} >
                             Gabung Sekarang
                         </NavLink>
                     </div>

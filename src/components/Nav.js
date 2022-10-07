@@ -6,20 +6,68 @@ import { NavLink, useLocation } from 'react-router-dom';
 const Nav = (props) => {
     const location = useLocation();
 
+    let activeClassName = "border-blue-500 border-b-2  rounded-none";
+    let notActive = "border-b-2 border-gray-200 rounded-none"
+    let notActivenonMobile = ""
     return (
 
         <div className="flex justify-between items-center py-3 px-5 ">
             <NavLink to={'/'}>
                 <img src={logo} alt="" className='w-32' />
             </NavLink>
-            <FontAwesomeIcon icon={faBars} className="block sm:hidden" size='xl' color={location.pathname === '/member' ? 'black' : 'white'} />
+            <div className="dropdown dropdown-end block sm:hidden">
+                <label tabIndex={0} className="btn btn-ghost btn-circle">
+                    <FontAwesomeIcon icon={faBars} color={location.pathname === '/member' ? 'black' : 'white'} />
+                </label>
+                <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 border-gray-200 border w-52 rounded-box">
+                    <li className='mb-3'>
+                        <NavLink
+                            style={{ borderRadius: '0px' }}
+
+                            className={({ isActive }) =>
+                                isActive ? activeClassName : notActive
+                            }
+                            to={'/'} end
+                        >Home</NavLink>
+                    </li>
+                    <li className='mb-3'>
+                        <NavLink
+                            style={{ borderRadius: '0px' }}
+                            to={'/member'}
+                            className={({ isActive }) =>
+                                isActive ? activeClassName : notActive
+                            }
+                        >Anggota</NavLink>
+                    </li>
+
+
+
+                </ul>
+            </div>
             <ul id="menuList" className={`space-x-7 font-semibold text-lg ${location.pathname === '/member' ?
                 'text-black' : 'text-white'
                 } hidden sm:flex`}>
-                <li><a>Tentang Kami</a></li>
-                <li><a>Galeri</a></li>
-                <li>
-                    <NavLink to={'/member'}>Anggota</NavLink>
+
+                <li >
+                    <NavLink
+                        style={{ borderRadius: '0px' }}
+
+                        className={({ isActive }) =>
+                            isActive ? activeClassName : notActivenonMobile
+                        }
+                        to={'/'} end
+                    >Home</NavLink>
+                </li>
+
+                <li >
+                    <NavLink
+                        style={{ borderRadius: '0px' }}
+
+                        className={({ isActive }) =>
+                            isActive ? activeClassName : notActivenonMobile
+                        }
+                        to={'/member'} end
+                    >member</NavLink>
                 </li>
             </ul>
 
