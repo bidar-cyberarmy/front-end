@@ -96,7 +96,8 @@ const FormRegistration = () => {
         user: user,
       })
       .then((res) => {
-        console.log(res);
+        return (window.location.href =
+          "https://chat.whatsapp.com/BNfFdSkgKAdGhA89C0aDcg");
       });
   };
 
@@ -330,7 +331,7 @@ const FormRegistration = () => {
                 >
                   <MenuItem value={"Multimedia"}>Multimedia</MenuItem>
                   <MenuItem value={"Software"}>Software</MenuItem>
-                  <MenuItem value={"IT Security"}>Software</MenuItem>
+                  <MenuItem value={"IT Security"}>IT Security</MenuItem>
                 </Select>
               </FormControl>
             </div>
