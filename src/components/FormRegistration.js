@@ -69,7 +69,6 @@ const FormRegistration = () => {
         user: user,
       })
       .then((res) => {
-        console.log(res);
         return setModal("modal-open");
       });
   };
