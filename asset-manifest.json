@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/bdca/static/css/main.1bb12a0e.css",
-    "main.js": "/bdca/static/js/main.a5124683.js",
-    "static/js/787.a92565cd.chunk.js": "/bdca/static/js/787.a92565cd.chunk.js",
-    "static/media/Teams.png": "/bdca/static/media/Teams.f99bfc1dd223f5b059ea.png",
-    "static/media/logo-bdca.png": "/bdca/static/media/logo-bdca.19c7a6d04464dc0df0bc.png",
-    "static/media/poppins-all-400-normal.woff": "/bdca/static/media/poppins-all-400-normal.6fbfdac99c274b77fe96.woff",
-    "static/media/poppins-devanagari-400-normal.woff2": "/bdca/static/media/poppins-devanagari-400-normal.64d5f06ee726edd58ca3.woff2",
-    "static/media/poppins-latin-400-normal.woff2": "/bdca/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
-    "static/media/poppins-latin-ext-400-normal.woff2": "/bdca/static/media/poppins-latin-ext-400-normal.4f38b4331448d2313adc.woff2",
-    "index.html": "/bdca/index.html",
-    "main.1bb12a0e.css.map": "/bdca/static/css/main.1bb12a0e.css.map",
-    "main.a5124683.js.map": "/bdca/static/js/main.a5124683.js.map",
-    "787.a92565cd.chunk.js.map": "/bdca/static/js/787.a92565cd.chunk.js.map"
+    "main.css": "/bdc/static/css/main.bcceb7e7.css",
+    "main.js": "/bdc/static/js/main.6d554c16.js",
+    "static/js/787.a92565cd.chunk.js": "/bdc/static/js/787.a92565cd.chunk.js",
+    "static/media/Teams.png": "/bdc/static/media/Teams.f99bfc1dd223f5b059ea.png",
+    "static/media/logo-bdca.png": "/bdc/static/media/logo-bdca.19c7a6d04464dc0df0bc.png",
+    "static/media/poppins-all-400-normal.woff": "/bdc/static/media/poppins-all-400-normal.6fbfdac99c274b77fe96.woff",
+    "static/media/poppins-devanagari-400-normal.woff2": "/bdc/static/media/poppins-devanagari-400-normal.64d5f06ee726edd58ca3.woff2",
+    "static/media/poppins-latin-400-normal.woff2": "/bdc/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
+    "static/media/poppins-latin-ext-400-normal.woff2": "/bdc/static/media/poppins-latin-ext-400-normal.4f38b4331448d2313adc.woff2",
+    "index.html": "/bdc/index.html",
+    "main.bcceb7e7.css.map": "/bdc/static/css/main.bcceb7e7.css.map",
+    "main.6d554c16.js.map": "/bdc/static/js/main.6d554c16.js.map",
+    "787.a92565cd.chunk.js.map": "/bdc/static/js/787.a92565cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bb12a0e.css",
-    "static/js/main.a5124683.js"
+    "static/css/main.bcceb7e7.css",
+    "static/js/main.6d554c16.js"
   ]
 }
