@@ -29,36 +29,9 @@ const FormRegistration = () => {
   const [provinsi, setProvinsi] = useState("");
   const [kabupaten, setKabupaten] = useState("");
   const [divisi, setDivisi] = useState("");
-  //   const user = {
-  //     full_name: "Joko Bastian",
-  //     email: "jokobastian1@gmail.com",
-  //     phone_number: "082123545676",
-  //     gender: {
-  //       name: "Male",
-  //     },
-  //     religion: "Islam",
-  //     student: {
-  //       nim: "2914090111",
-  //       faculty: "Ilmu Komputer",
-  //       study_program: "Teknik Informatika",
-  //       class: {
-  //         name: "Reguler",
-  //       },
-  //       level: {
-  //         name: "S1",
-  //       },
-  //       semester: 4,
-  //     },
-  //     original_address: "Desa Marga Kembang",
-  //     residence_address: "Plaju, Palembang",
-  //     province: "Sumatera Selatan",
-  //     city_or_district: "Baturaja",
-  //     bdca_family: {
-  //       division: {
-  //         name: "Software",
-  //       },
-  //     },
-  //   };
+
+  const [modal, setModal] = useState("");
+
   const user = {
     full_name: fullname,
     email: email,
@@ -96,13 +69,34 @@ const FormRegistration = () => {
         user: user,
       })
       .then((res) => {
-        return (window.location.href =
-          "https://chat.whatsapp.com/BNfFdSkgKAdGhA89C0aDcg");
+        console.log(res);
+        return setModal("modal-open");
       });
   };
 
   return (
     <>
+      <div className={`modal ${modal}`}>
+        <div className="modal-box">
+          <h3 className="font-bold text-lg">Berhasil</h3>
+          <p className="py-4">
+            Anda Berhasil daftar silakan klik button di bawah ini untuk masuk
+            grup whatsapp
+          </p>
+          <div className="modal-action">
+            <label
+              htmlFor="my-modal"
+              onClick={() =>
+                (window.location.href =
+                  "https://chat.whatsapp.com/BNfFdSkgKAdGhA89C0aDcg")
+              }
+              className="btn"
+            >
+              Oke
+            </label>
+          </div>
+        </div>
+      </div>
       <form action="" onSubmit={postUser}>
         <div>
           <h1 className="mb-3">Personal Detail</h1>
@@ -338,7 +332,10 @@ const FormRegistration = () => {
           </div>
         </div>
         <div className=" flex flex-row-reverse">
-          <button className="px-3 py-2 bg-blue-600 text-white rounded-lg ">
+          <button
+            type="submit"
+            className="px-3 py-2 bg-blue-600 text-white rounded-lg "
+          >
             Kirim
           </button>
           <NavLink
